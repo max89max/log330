@@ -1,0 +1,15 @@
+C:\Users\2\Desktop\mLariviere_Log330_Tp1\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\2\Desktop\mLariviere_Log330_Tp1\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Users\2\Desktop\mLariviere_Log330_Tp1\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\Users\2\Desktop\mLariviere_Log330_Tp2\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\2\Desktop\mLariviere_Log330_Tp2\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Users\2\Desktop\mLariviere_Log330_Tp2\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\Users\2\Desktop\mLariviere_Log330_Tp2\ConsoleApplication1\ConsoleApplication1\obj\Debug\VarianceCalculator.csprojResolveAssemblyReference.cache
+C:\Users\2\Desktop\mLariviere_Log330_Tp2\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\2\Desktop\mLariviere_Log330_Tp2\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\admin\Documents\laboConjure_Aut2017\mLariviere_Log330_Tp2\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\admin\Documents\laboConjure_Aut2017\mLariviere_Log330_Tp2\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Users\admin\Documents\laboConjure_Aut2017\mLariviere_Log330_Tp2\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\Users\admin\Documents\laboConjure_Aut2017\mLariviere_Log330_Tp2\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\admin\Documents\laboConjure_Aut2017\mLariviere_Log330_Tp2\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\admin\Documents\laboConjure_Aut2017\mLariviere_Log330_Tp2\ConsoleApplication1\ConsoleApplication1\obj\Debug\VarianceCalculator.csprojResolveAssemblyReference.cache
