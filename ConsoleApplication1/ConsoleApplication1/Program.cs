@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -48,16 +48,24 @@ namespace ConsoleApplication1
             return powValue;
         }
 
-        public static StreamReader GetStreamReader(String file)
+        public static StreamReader GetStreamReader(String file, bool isTest=false)
         {
             StreamReader reader = null;
 
             while (reader == null)
             {
-                string pathFile = Console.ReadLine();
+                string pathFile = file;
+
+                if (!isTest)
+                {
+                    pathFile = Console.ReadLine();
+                }
 
                 if (pathFile == "")
                 {
+                    if (file == "")
+                        return null;
+
                     reader = new StreamReader(file);
                 }
                 else if (!File.Exists(pathFile))
@@ -71,8 +79,9 @@ namespace ConsoleApplication1
                 else
                 {
                     reader = new StreamReader(pathFile);
-                }
+                } 
             }
+            
             return reader;
         }
     }

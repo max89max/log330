@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1
 {
-    internal class CorrelationCalculator
+    public class CorrelationCalculator
     {
         public void calcul()
         {
@@ -76,7 +76,7 @@ namespace ConsoleApplication1
             Console.WriteLine(correlationText);
         }
 
-        static double calculCorrelation(List<double> listX, List<double> listY)
+        public static double calculCorrelation(List<double> listX, List<double> listY)
         {
             double correlation = 0;
             int nbrPairDonnees = listX.Count;
@@ -118,14 +118,14 @@ namespace ConsoleApplication1
             return Program.abs(correlation);
         }
 
-        static double calculNumerateurCorrelation(double sommeX, double sommeY, double sommeXY, int nbrElement)
+        public static double calculNumerateurCorrelation(double sommeX, double sommeY, double sommeXY, int nbrElement)
         {
             double numerateur = (nbrElement * (sommeXY) - (sommeX * sommeY));
 
             return numerateur;
         }
 
-        static double calculDenominateurCorrelation(double sommeExposantX, double sommeExposantY, double sommeXPow, double sommeYPow, int nbrElement)
+        public static double calculDenominateurCorrelation(double sommeExposantX, double sommeExposantY, double sommeXPow, double sommeYPow, int nbrElement)
         {
             double denominateur = ((nbrElement * (sommeExposantX) - sommeXPow) * (nbrElement * (sommeExposantY) - sommeYPow));
 

@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1
 {
-    internal class VarianceCalculator
+    public class VarianceCalculator
     {
         public void calcul()
         {
             Console.WriteLine("Bonjour. veuillez entrer le chemin du fichier csv à analyser. Appuyer sur enter en laissant le champ vide pour charger le fichier test.csv dans le dossier bin/Debug");
 
-            List<int> listNumber = new List<int>();
+            List<double> listNumber = new List<double>();
             string numeroText = "données : ";
 
             StreamReader reader = Program.GetStreamReader("test.csv");
@@ -36,7 +36,7 @@ namespace ConsoleApplication1
             double variance = GetEcartType(sommeDistance, listNumber.Count);
         }
 
-        static double GetMoyenne(List<int> list)
+        public static double GetMoyenne(List<double> list)
         {
             double moyenne = 0;
             int ListLength = list.Count;
@@ -52,7 +52,7 @@ namespace ConsoleApplication1
             return moyenne;
         }
 
-        static double GetSommeDistance(List<int> list, double moyenne)
+        public static double GetSommeDistance(List<double> list, double moyenne)
         {
             int ListLength = list.Count;
             double sommeDistance = 0.0;
@@ -69,7 +69,7 @@ namespace ConsoleApplication1
             return sommeDistance;
         }
 
-        static double GetEcartType(double sommeDistance, int countList)
+        public static double GetEcartType(double sommeDistance, int countList)
         {
             double variance = (1.0 / countList) * sommeDistance;
 
