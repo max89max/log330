@@ -6,4 +6,4 @@ before_install:
 before_script:
   - nuget restore ConsoleApplication1/correlationCalculator.sln
 after_script:
-  - nunit-console UnitTestProject1/bin/Debug/UnitTestProject1.dll
+  - nunit-console ConsoleApplication1/UnitTestProject1/bin/Debug/UnitTestProject1.dll
