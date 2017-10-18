@@ -19,3 +19,9 @@ C:\Users\2\Desktop\log330\ConsoleApplication1\ConsoleApplication1\obj\Debug\Cons
 C:\Users\2\Desktop\log330\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
 C:\Users\2\Desktop\log330\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
 C:\Users\2\Desktop\log330\ConsoleApplication1\ConsoleApplication1\obj\Debug\VarianceCalculator.csprojResolveAssemblyReference.cache
+E:\Maxime Lariviere\log330\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+E:\Maxime Lariviere\log330\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+E:\Maxime Lariviere\log330\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+E:\Maxime Lariviere\log330\ConsoleApplication1\ConsoleApplication1\obj\Debug\VarianceCalculator.csprojResolveAssemblyReference.cache
+E:\Maxime Lariviere\log330\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+E:\Maxime Lariviere\log330\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

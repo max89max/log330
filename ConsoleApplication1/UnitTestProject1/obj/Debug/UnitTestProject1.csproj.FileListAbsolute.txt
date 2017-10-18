@@ -6,3 +6,11 @@ C:\Users\2\Desktop\log330\ConsoleApplication1\UnitTestProject1\bin\Debug\Microso
 C:\Users\2\Desktop\log330\ConsoleApplication1\UnitTestProject1\bin\Debug\ConsoleApplication1.pdb
 C:\Users\2\Desktop\log330\ConsoleApplication1\UnitTestProject1\obj\Debug\UnitTestProject1.dll
 C:\Users\2\Desktop\log330\ConsoleApplication1\UnitTestProject1\obj\Debug\UnitTestProject1.pdb
+E:\Maxime Lariviere\log330\ConsoleApplication1\UnitTestProject1\bin\Debug\UnitTestProject1.dll
+E:\Maxime Lariviere\log330\ConsoleApplication1\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
+E:\Maxime Lariviere\log330\ConsoleApplication1\UnitTestProject1\bin\Debug\ConsoleApplication1.exe
+E:\Maxime Lariviere\log330\ConsoleApplication1\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+E:\Maxime Lariviere\log330\ConsoleApplication1\UnitTestProject1\bin\Debug\ConsoleApplication1.pdb
+E:\Maxime Lariviere\log330\ConsoleApplication1\UnitTestProject1\obj\Debug\UnitTestProject1.csprojResolveAssemblyReference.cache
+E:\Maxime Lariviere\log330\ConsoleApplication1\UnitTestProject1\obj\Debug\UnitTestProject1.dll
+E:\Maxime Lariviere\log330\ConsoleApplication1\UnitTestProject1\obj\Debug\UnitTestProject1.pdb
