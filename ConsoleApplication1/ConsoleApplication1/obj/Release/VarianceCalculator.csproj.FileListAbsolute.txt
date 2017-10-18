@@ -4,3 +4,6 @@ C:\Users\am92570\Desktop\log330\ConsoleApplication1\ConsoleApplication1\bin\Rele
 C:\Users\am92570\Desktop\log330\ConsoleApplication1\ConsoleApplication1\obj\Release\VarianceCalculator.csprojResolveAssemblyReference.cache
 C:\Users\am92570\Desktop\log330\ConsoleApplication1\ConsoleApplication1\obj\Release\ConsoleApplication1.exe
 C:\Users\am92570\Desktop\log330\ConsoleApplication1\ConsoleApplication1\obj\Release\ConsoleApplication1.pdb
+C:\Users\am92570\Documents\log330\ConsoleApplication1\ConsoleApplication1\bin\Release\ConsoleApplication1.exe.config
+C:\Users\am92570\Documents\log330\ConsoleApplication1\ConsoleApplication1\obj\Release\ConsoleApplication1.exe
+C:\Users\am92570\Documents\log330\ConsoleApplication1\ConsoleApplication1\obj\Release\ConsoleApplication1.pdb
