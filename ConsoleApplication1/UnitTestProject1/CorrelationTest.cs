@@ -70,7 +70,7 @@ namespace UnitTestProject
 
             double correlation = CorrelationCalculator.calculCorrelation(listNumberX, listNumberY);
 
-            Assert.Equal(correlation, correlationTest);
+            Assert.NotEqual(correlation, correlationTest);
         }
     }
 }
