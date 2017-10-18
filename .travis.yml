@@ -1,8 +1,9 @@
 language: csharp
-solution: ConsoleApplication1/correlationCalculator.sln
-install:
-  - nuget restore ConsoleApplication1/correlationCalculator.sln
-  - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
 script:
-  - xbuild /p:Configuration=Release ConsoleApplication1/correlationCalculator.sln
-  - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./UnitTestProject1/bin/Release/UnitTestProject1.dll
+  - xbuild /p:Configuration=Debug ConsoleApplication1/correlationCalculator.sln
+before_install:
+  - sudo apt-get install nunit-console
+before_script:
+  - nuget restore ConsoleApplication1/correlationCalculator.sln
+after_script:
+  - nunit-console UnitTestProject1/bin/Debug/UnitTestProject1.dll
