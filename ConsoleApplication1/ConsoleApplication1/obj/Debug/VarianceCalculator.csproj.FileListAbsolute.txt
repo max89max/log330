@@ -31,3 +31,9 @@ C:\Users\am92570\Desktop\log330\ConsoleApplication1\ConsoleApplication1\obj\Debu
 C:\Users\am92570\Desktop\log330\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
 C:\Users\am92570\Desktop\log330\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
 C:\Users\am92570\Desktop\log330\ConsoleApplication1\ConsoleApplication1\obj\Debug\VarianceCalculator.csprojResolveAssemblyReference.cache
+C:\Users\am92570\Documents\log330\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\am92570\Documents\log330\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Users\am92570\Documents\log330\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\Users\am92570\Documents\log330\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\am92570\Documents\log330\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\am92570\Documents\log330\ConsoleApplication1\ConsoleApplication1\obj\Debug\VarianceCalculator.csprojResolveAssemblyReference.cache
