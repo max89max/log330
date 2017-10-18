@@ -1,14 +1,13 @@
 ﻿using ConsoleApplication1;
 using System.IO;
 using System;
-using NUnit.Framework;
+using Xunit;
 
 namespace UnitTestProject
 {
-    [TestFixture]
     public class NumerateurCorrelationTest
     {
-        [Test]
+        [Fact]
         public void TestNumerateurCorrelationInferieure()
         {
             const double numerateurTest = 200;
@@ -20,10 +19,10 @@ namespace UnitTestProject
 
             double numerateur = CorrelationCalculator.calculNumerateurCorrelation(sommeX, sommeY, sommeXY, nbrPairDonnees);
 
-            Assert.That(numerateur, Is.EqualTo(numerateurTest));
+            Assert.Equal(numerateur, numerateurTest);
         }
 
-        [Test]
+        [Fact]
         public void TestNumerateurCorrelationSuperieure()
         {
             const double numerateurTest = 401.44;
@@ -35,10 +34,10 @@ namespace UnitTestProject
 
             double numerateur = CorrelationCalculator.calculNumerateurCorrelation(sommeX, sommeY, sommeXY, nbrPairDonnees);
 
-            Assert.That(numerateur, Is.EqualTo(numerateurTest));
+            Assert.Equal(Math.Round(numerateur,2), numerateurTest);
         }
 
-        [Test]
+        [Fact]
         public void TestNumerateurCorrelationInvalide()
         {
             const double numerateurTest = 0;
@@ -50,7 +49,7 @@ namespace UnitTestProject
 
             double numerateur = CorrelationCalculator.calculNumerateurCorrelation(sommeX, sommeY, sommeXY, nbrPairDonnees);
 
-            Assert.That(numerateur, Is.EqualTo(numerateurTest));
+            Assert.Equal(numerateur, numerateurTest);
         }
     }
 }

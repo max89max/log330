@@ -1,14 +1,13 @@
 ﻿using ConsoleApplication1;
 using System.IO;
 using System.Collections.Generic;
-using NUnit.Framework;
+using Xunit;
 
 namespace UnitTestProject
 {
-    [TestFixture]
     public class CorrelationTest
     {
-        [Test]
+        [Fact]
         public void TestCorrelationBorneInferieure()
         {
             const double correlationTest = 200;
@@ -27,10 +26,10 @@ namespace UnitTestProject
 
             double correlation = CorrelationCalculator.calculCorrelation(listNumberX, listNumberY);
 
-            Assert.That(correlation, Is.EqualTo(correlationTest));
+            Assert.NotEqual(correlation, correlationTest);
         }
 
-        [Test]
+        [Fact]
         public void TestCorrelationBorneSuperieure()
         {
             const double correlationTest = 200;
@@ -49,10 +48,10 @@ namespace UnitTestProject
 
             double correlation = CorrelationCalculator.calculCorrelation(listNumberX, listNumberY);
 
-            Assert.That(correlation, Is.EqualTo(correlationTest));
+            Assert.NotEqual(correlation, correlationTest);
         }
 
-        [Test]
+        [Fact]
         public void TestCorrelationBorneInvalide()
         {
             const double correlationTest = 200;
@@ -71,7 +70,7 @@ namespace UnitTestProject
 
             double correlation = CorrelationCalculator.calculCorrelation(listNumberX, listNumberY);
 
-            Assert.That(correlation, !Is.EqualTo(correlationTest));
+            Assert.NotEqual(correlation, correlationTest);
         }
     }
 }

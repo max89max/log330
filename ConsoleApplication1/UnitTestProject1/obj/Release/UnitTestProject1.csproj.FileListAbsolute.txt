@@ -17,5 +17,3 @@ C:\Users\am92570\Desktop\log330\ConsoleApplication1\UnitTestProject1\bin\Release
 C:\Users\am92570\Desktop\log330\ConsoleApplication1\UnitTestProject1\obj\Release\UnitTestProject1.csprojResolveAssemblyReference.cache
 C:\Users\am92570\Desktop\log330\ConsoleApplication1\UnitTestProject1\obj\Release\UnitTestProject1.dll
 C:\Users\am92570\Desktop\log330\ConsoleApplication1\UnitTestProject1\obj\Release\UnitTestProject1.pdb
-C:\Users\am92570\Desktop\log330\ConsoleApplication1\UnitTestProject1\bin\Release\nunit.framework.dll
-C:\Users\am92570\Desktop\log330\ConsoleApplication1\UnitTestProject1\bin\Release\nunit.framework.xml

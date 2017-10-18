@@ -1,14 +1,13 @@
 ﻿using ConsoleApplication1;
 using System.IO;
 using System.Collections.Generic;
-using NUnit.Framework;
+using Xunit;
 
 namespace UnitTestProject
 {
-    [TestFixture]
     public class DistanceTest
     {
-        [Test]
+        [Fact]
         public void TestDistanceBorneInferieure()
         {
             const double distanceTest = 200;
@@ -23,10 +22,10 @@ namespace UnitTestProject
 
             double distance = VarianceCalculator.GetSommeDistance(listNumber, moyenne);
 
-            Assert.That(distance, Is.EqualTo(distanceTest));
+            Assert.Equal(distance, distanceTest);
         }
 
-        [Test]
+        [Fact]
         public void TestDistanceBorneSuperieure()
         {
             const double distanceTest = 200;
@@ -41,10 +40,10 @@ namespace UnitTestProject
 
             double distance = VarianceCalculator.GetSommeDistance(listNumber, moyenne);
 
-            Assert.That(distance, Is.EqualTo(distanceTest));
+            Assert.Equal(distance, distanceTest);
         }
 
-        [Test]
+        [Fact]
         public void TestDistanceBorneInvalide()
         {
             const double distanceTest = 20;
@@ -59,7 +58,7 @@ namespace UnitTestProject
 
             double distance = VarianceCalculator.GetSommeDistance(listNumber, moyenne);
 
-            Assert.That(distance, Is.EqualTo(distanceTest));
+            Assert.NotEqual(distance, distanceTest);
         }
     }
 }

@@ -1,34 +1,33 @@
 ﻿using ConsoleApplication1;
 using System.IO;
-using NUnit.Framework;
+using Xunit;
 
 namespace UnitTestProject1
 {
-    [TestFixture]
     public class TestStreamReader
     {
-        [Test]
+        [Fact]
         public void TestSteamReaderBorneInferieure()
         {
             StreamReader reader = Program.GetStreamReader("test.csv", true);
 
-            Assert.That(reader, !Is.EqualTo(null));
+            Assert.NotEqual(reader, null);
         }
 
-        [Test]
+        [Fact]
         public void TestSteamReaderBorneSuperieure()
         {
             StreamReader reader = Program.GetStreamReader("test.csv", true);
 
-            Assert.That(reader, !Is.EqualTo(null));
+            Assert.NotEqual(reader, null);
         }
 
-        [Test]
+        [Fact]
         public void TestSteamReaderBorneInvalide()
         {
             StreamReader reader = Program.GetStreamReader("", true);
 
-            Assert.That(reader, Is.EqualTo(null));
+            Assert.Equal(reader, null);
         }
     }
 }

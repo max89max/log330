@@ -1,13 +1,12 @@
 ﻿using ConsoleApplication1;
 using System.IO;
-using NUnit.Framework;
+using Xunit;
 
 namespace UnitTestProject
 {
-    [TestFixture]
     public class DenominateurCorrelationTest
     {
-        [Test]
+        [Fact]
         public void TestDenominateurCorrelationInferieure()
         {
             const double denominateurTest = 144;
@@ -22,10 +21,10 @@ namespace UnitTestProject
 
             double denominateur = CorrelationCalculator.calculDenominateurCorrelation(sommeExposantX, sommeExposantY, sommePowX, sommePowY, nbrPairDonnees);
 
-            Assert.That(denominateur, Is.EqualTo(denominateurTest));
+            Assert.Equal(denominateur, denominateurTest);
         }
 
-        [Test]
+        [Fact]
         public void TestDenominateurCorrelationSuperieure()
         {
             const double denominateurTest = 195.64;
@@ -40,10 +39,10 @@ namespace UnitTestProject
 
             double denominateur = CorrelationCalculator.calculDenominateurCorrelation(sommeExposantX, sommeExposantY, sommePowX, sommePowY, nbrPairDonnees);
 
-            Assert.That(denominateur, Is.EqualTo(denominateurTest));
+            Assert.Equal(denominateur, denominateurTest);
         }
 
-        [Test]
+        [Fact]
         public void TestDenominateurCorrelationInvalide()
         {
             const double denominateurTest = 0;
@@ -58,7 +57,7 @@ namespace UnitTestProject
 
             double denominateur = CorrelationCalculator.calculDenominateurCorrelation(sommeExposantX, sommeExposantY, sommePowX, sommePowY, nbrPairDonnees);
 
-            Assert.That(denominateur, Is.EqualTo(denominateurTest));
+            Assert.Equal(denominateur, denominateurTest);
         }
     }
 }
