@@ -7,3 +7,5 @@ before_script:
   - nuget restore ConsoleApplication1/correlationCalculator.sln
 after_script:
   - nunit-console ConsoleApplication1/UnitTestProject1/bin/Debug/UnitTestProject1.dll
+
+  
