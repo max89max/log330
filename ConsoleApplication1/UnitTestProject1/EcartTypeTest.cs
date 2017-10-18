@@ -1,5 +1,6 @@
 ﻿using ConsoleApplication1;
 using System.IO;
+using System;
 
 #if NUNIT
 using TestClass = NUnit.Framework.TestFixtureAttribute;
