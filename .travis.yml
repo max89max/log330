@@ -5,5 +5,5 @@ install:
   - nuget install xunit.runners.console -Version 1.9.2 -OutputDirectory testrunner
 script:
   - xbuild /p:Configuration=Release ConsoleApplication1/correlationCalculator.sln
-  - mono ./testrunner/xunit.runner.console.1.9.2/tools/xunit.console.exe ./ConsoleApplication1/UnitTestProject1/bin/Release/UnitTestProject1.dll
+  - mono ./packages/xunit.runners.*/tools/xunit.console.clr4.exe ./ConsoleApplication1/UnitTestProject1/bin/Release/UnitTestProject1.dll
   
