@@ -1,19 +1,12 @@
 ﻿using ConsoleApplication1;
 using System.IO;
-
-#if NUNIT
-using TestClass = NUnit.Framework.TestFixtureAttribute;
-using TestMethod = NUnit.Framework.TestAttribute;
-#else
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-#endif
+using Xunit;
 
 namespace UnitTestProject
 {
-    [TestClass]
     public class DenominateurCorrelationTest
     {
-        [TestMethod]
+        [Fact]
         public void TestDenominateurCorrelationInferieure()
         {
             const double denominateurTest = 144;
@@ -28,10 +21,10 @@ namespace UnitTestProject
 
             double denominateur = CorrelationCalculator.calculDenominateurCorrelation(sommeExposantX, sommeExposantY, sommePowX, sommePowY, nbrPairDonnees);
 
-            Assert.AreEqual(denominateur, denominateurTest);
+            Assert.Equal(denominateur, denominateurTest);
         }
 
-        [TestMethod]
+        [Fact]
         public void TestDenominateurCorrelationSuperieure()
         {
             const double denominateurTest = 195.64;
@@ -46,10 +39,10 @@ namespace UnitTestProject
 
             double denominateur = CorrelationCalculator.calculDenominateurCorrelation(sommeExposantX, sommeExposantY, sommePowX, sommePowY, nbrPairDonnees);
 
-            Assert.AreEqual(denominateur, denominateurTest);
+            Assert.Equal(denominateur, denominateurTest);
         }
 
-        [TestMethod]
+        [Fact]
         public void TestDenominateurCorrelationInvalide()
         {
             const double denominateurTest = 0;
@@ -64,7 +57,7 @@ namespace UnitTestProject
 
             double denominateur = CorrelationCalculator.calculDenominateurCorrelation(sommeExposantX, sommeExposantY, sommePowX, sommePowY, nbrPairDonnees);
 
-            Assert.AreEqual(denominateur, denominateurTest);
+            Assert.Equal(denominateur, denominateurTest);
         }
     }
 }

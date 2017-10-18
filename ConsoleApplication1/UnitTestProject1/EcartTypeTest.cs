@@ -1,20 +1,13 @@
 ﻿using ConsoleApplication1;
 using System.IO;
 using System;
-
-#if NUNIT
-using TestClass = NUnit.Framework.TestFixtureAttribute;
-using TestMethod = NUnit.Framework.TestAttribute;
-#else
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-#endif
+using Xunit;
 
 namespace UnitTestProject
 {
-    [TestClass]
     public class EcartTypeTest
     {
-        [TestMethod]
+        [Fact]
         public void TestEcartTypeBorneInferieure()
         {
             const double ecartTypeTest = 10;
@@ -24,10 +17,10 @@ namespace UnitTestProject
 
             double ecartType = VarianceCalculator.GetEcartType(sommeDistance, nbrPairDonnees);
 
-            Assert.AreEqual(ecartType, ecartTypeTest);
+            Assert.Equal(ecartType, ecartTypeTest);
         }
 
-        [TestMethod]
+        [Fact]
         public void TestEcartTypeBorneSuperieure()
         {
             const double ecartTypeTest = 4.47;
@@ -37,10 +30,10 @@ namespace UnitTestProject
 
             double ecartType = VarianceCalculator.GetEcartType(sommeDistance, nbrPairDonnees);
 
-            Assert.AreEqual(Math.Round(ecartType,2), ecartTypeTest);
+            Assert.Equal(Math.Round(ecartType,2), ecartTypeTest);
         }
 
-        [TestMethod]
+        [Fact]
         public void TestEcartTypeBorneInvalide()
         {
             const double ecartTypeTest = 0;
@@ -50,7 +43,7 @@ namespace UnitTestProject
 
             double ecartType = VarianceCalculator.GetEcartType(sommeDistance, nbrPairDonnees);
 
-            Assert.AreNotEqual(ecartType, ecartTypeTest);
+            Assert.NotEqual(ecartType, ecartTypeTest);
         }
     }
 }

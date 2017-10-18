@@ -1,20 +1,13 @@
 ﻿using ConsoleApplication1;
 using System.IO;
 using System.Collections.Generic;
-
-#if NUNIT
-using TestClass = NUnit.Framework.TestFixtureAttribute;
-using TestMethod = NUnit.Framework.TestAttribute;
-#else
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-#endif
+using Xunit;
 
 namespace UnitTestProject
 {
-    [TestClass]
     public class MoyenneTest
     {
-        [TestMethod]
+        [Fact]
         public void TestMoyenneBorneInferieure()
         {
             const double moyenneTest = 20;
@@ -27,10 +20,10 @@ namespace UnitTestProject
 
             double moyenne = VarianceCalculator.GetMoyenne(listNumber);
 
-            Assert.AreEqual(moyenne, moyenneTest);
+            Assert.Equal(moyenne, moyenneTest);
         }
 
-        [TestMethod]
+        [Fact]
         public void TestMoyenneBorneSuperieure()
         {
             const double moyenneTest = 20.999;
@@ -43,10 +36,10 @@ namespace UnitTestProject
 
             double moyenne = VarianceCalculator.GetMoyenne(listNumber);
 
-            Assert.AreEqual(moyenne, moyenneTest);
+            Assert.Equal(moyenne, moyenneTest);
         }
 
-        [TestMethod]
+        [Fact]
         public void TestMoyenneBorneInvalide()
         {
             const double moyenneTest = 20.999;
@@ -55,7 +48,7 @@ namespace UnitTestProject
 
             double moyenne = VarianceCalculator.GetMoyenne(listNumber);
 
-            Assert.AreNotEqual(moyenne, moyenneTest);
+            Assert.NotEqual(moyenne, moyenneTest);
         }
     }
 }

@@ -1,20 +1,13 @@
 ﻿using ConsoleApplication1;
 using System.IO;
 using System.Collections.Generic;
-
-#if NUNIT
-using TestClass = NUnit.Framework.TestFixtureAttribute;
-using TestMethod = NUnit.Framework.TestAttribute;
-#else
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-#endif
+using Xunit;
 
 namespace UnitTestProject
 {
-    [TestClass]
     public class DistanceTest
     {
-        [TestMethod]
+        [Fact]
         public void TestDistanceBorneInferieure()
         {
             const double distanceTest = 200;
@@ -29,10 +22,10 @@ namespace UnitTestProject
 
             double distance = VarianceCalculator.GetSommeDistance(listNumber, moyenne);
 
-            Assert.AreEqual(distance, distanceTest);
+            Assert.Equal(distance, distanceTest);
         }
 
-        [TestMethod]
+        [Fact]
         public void TestDistanceBorneSuperieure()
         {
             const double distanceTest = 200;
@@ -47,10 +40,10 @@ namespace UnitTestProject
 
             double distance = VarianceCalculator.GetSommeDistance(listNumber, moyenne);
 
-            Assert.AreEqual(distance, distanceTest);
+            Assert.Equal(distance, distanceTest);
         }
 
-        [TestMethod]
+        [Fact]
         public void TestDistanceBorneInvalide()
         {
             const double distanceTest = 20;
@@ -65,7 +58,7 @@ namespace UnitTestProject
 
             double distance = VarianceCalculator.GetSommeDistance(listNumber, moyenne);
 
-            Assert.AreNotEqual(distance, distanceTest);
+            Assert.NotEqual(distance, distanceTest);
         }
     }
 }

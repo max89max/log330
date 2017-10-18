@@ -1,19 +1,13 @@
 ﻿using ConsoleApplication1;
 using System.IO;
 using System.Collections.Generic;
-
-#if NUNIT
-using TestClass = NUnit.Framework.TestFixtureAttribute;
-using TestMethod = NUnit.Framework.TestAttribute;
-#else
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-#endif
+using Xunit;
 
 namespace UnitTestProject
 {
     public class CorrelationTest
     {
-        [TestMethod]
+        [Fact]
         public void TestCorrelationBorneInferieure()
         {
             const double correlationTest = 200;
@@ -32,10 +26,10 @@ namespace UnitTestProject
 
             double correlation = CorrelationCalculator.calculCorrelation(listNumberX, listNumberY);
 
-            Assert.AreEqual(correlation, correlationTest);
+            Assert.Equal(correlation, correlationTest);
         }
 
-        [TestMethod]
+        [Fact]
         public void TestCorrelationBorneSuperieure()
         {
             const double correlationTest = 200;
@@ -54,10 +48,10 @@ namespace UnitTestProject
 
             double correlation = CorrelationCalculator.calculCorrelation(listNumberX, listNumberY);
 
-            Assert.AreEqual(correlation, correlationTest);
+            Assert.Equal(correlation, correlationTest);
         }
 
-        [TestMethod]
+        [Fact]
         public void TestCorrelationBorneInvalide()
         {
             const double correlationTest = 200;
@@ -77,7 +71,7 @@ namespace UnitTestProject
 
             double correlation = CorrelationCalculator.calculCorrelation(listNumberX, listNumberY);
 
-            Assert.AreEqual(correlation, correlationTest);
+            Assert.Equal(correlation, correlationTest);
         }
     }
 }
