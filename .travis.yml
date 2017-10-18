@@ -1,12 +1,10 @@
 language: csharp
 solution: ConsoleApplication1/correlationCalculator.sln
-script:
-  - xbuild /p:Configuration=Debug ConsoleApplication1/correlationCalculator.sln
-before_install:
-  - sudo apt-get install nunit-console
-before_script:
+install:
   - nuget restore ConsoleApplication1/correlationCalculator.sln
-after_script:
-  - nunit-console ConsoleApplication1/UnitTestProject1/bin/Debug/UnitTestProject1.dll
+  - nuget install xunit.runners -Version 1.9.2 -OutputDirectory testrunner
+script:
+  - xbuild /p:Configuration=Release ConsoleApplication1/correlationCalculator.sln
+  - mono ./testrunner/xunit.runners.1.9.2/tools/xunit.console.clr4.exe ./UnitTestProject1/bin/Release/UnitTestProject1.dll
 
   
