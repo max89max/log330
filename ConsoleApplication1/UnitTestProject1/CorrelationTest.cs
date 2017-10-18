@@ -61,7 +61,6 @@ namespace UnitTestProject
             listNumberX.Add(10);
             listNumberX.Add(20);
             listNumberX.Add(30);
-            listNumberX.Add(40);
 
             List<double> listNumberY = new List<double>();
 
