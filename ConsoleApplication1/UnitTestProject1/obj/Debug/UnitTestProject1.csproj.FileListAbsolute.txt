@@ -33,3 +33,5 @@ C:\Users\am92570\Desktop\log330\ConsoleApplication1\UnitTestProject1\obj\Debug\U
 C:\Users\am92570\Desktop\log330\ConsoleApplication1\UnitTestProject1\bin\Debug\xunit.runner.visualstudio.testadapter.dll
 C:\Users\am92570\Desktop\log330\ConsoleApplication1\UnitTestProject1\bin\Debug\xunit.runner.reporters.net452.dll
 C:\Users\am92570\Desktop\log330\ConsoleApplication1\UnitTestProject1\bin\Debug\xunit.runner.utility.net452.dll
+C:\Users\am92570\Desktop\log330\ConsoleApplication1\UnitTestProject1\bin\Debug\nunit.framework.dll
+C:\Users\am92570\Desktop\log330\ConsoleApplication1\UnitTestProject1\bin\Debug\nunit.framework.xml

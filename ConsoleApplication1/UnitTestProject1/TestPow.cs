@@ -1,39 +1,40 @@
 ﻿using ConsoleApplication1;
 using System.IO;
-using Xunit;
+using NUnit.Framework;
 
 namespace UnitTestProject1
 {
+    [TestFixture]
     public class TestPow
     {
-        [Fact]
+        [Test]
         public void TestPowBorneInferieure()
         {
             const double powTest = 100;
 
             double pow = Program.pow(-10);
 
-            Assert.Equal(pow, powTest);
+            Assert.That(pow, Is.EqualTo(powTest));
         }
 
-        [Fact]
+        [Test]
         public void TestPowBorneSuperieure()
         {
             const double powTest = 118.81;
 
             double pow = Program.pow(-10.90);
 
-            Assert.Equal(pow, powTest);
+            Assert.That(pow, Is.EqualTo(powTest));
         }
 
-        [Fact]
+        [Test]
         public void TestPowBorneInvalide()
         {
             const double powTest = 1;
 
             double pow = Program.pow(-1);
 
-            Assert.Equal(pow, powTest);
+            Assert.That(pow, Is.EqualTo(powTest));
         }
     }
 }
