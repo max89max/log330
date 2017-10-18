@@ -20,7 +20,7 @@ namespace UnitTestProject1
 
             double abs = Program.abs(-100);
 
-            Assert.AreEqual(abs, absTest);
+            Assert.AreNotEqual(abs, absTest);
         }
 
         [TestMethod]
