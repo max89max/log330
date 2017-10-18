@@ -1,0 +1,5 @@
+language: csharp
+solution: "./ConsoleApplication1/correlationCalculator.sln"
+script:
+- xbuild "./ConsoleApplication1/correlationCalculator.sln"
+- mono ./ConsoleApplication1/packages/xunit.runner.console*/tools/xunit.console.exe ./ConsoleApplication1/UnitTestProject1/bin/Debug/UnitTestProject1.dll
