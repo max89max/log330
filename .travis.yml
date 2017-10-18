@@ -2,8 +2,7 @@ language: csharp
 solution: ConsoleApplication1/correlationCalculator.sln
 install:
   - nuget restore ConsoleApplication1/correlationCalculator.sln
-  - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
+  - nuget install xunit.runners -Version 1.9.2 -OutputDirectory testrunner
 script:
   - xbuild /p:Configuration=Release ConsoleApplication1/correlationCalculator.sln
-  - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./ConsoleApplication1/UnitTestProject1/bin/Release/UnitTestProject1.dll
-  
+  - mono ./testrunner/xunit.runners.1.9.2/tools/xunit.console.clr4.exe ./ConsoleApplication1/UnitTestProject1/bin/Release/UnitTestProject1.dll
