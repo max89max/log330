@@ -72,16 +72,20 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="CorrelationTest.cs" />
-    <Compile Include="DenominateurCorrelationTest.cs" />
-    <Compile Include="DistanceTest.cs" />
-    <Compile Include="EcartTypeTest.cs" />
-    <Compile Include="MoyenneTest.cs" />
-    <Compile Include="NumerateurCorrelationTest.cs" />
+    <Compile Include="src\CorrelationCalculatorTest\CorrelationListValues.cs" />
+    <Compile Include="src\CorrelationCalculatorTest\LienNorminalTest.cs" />
+    <Compile Include="src\CorrelationCalculatorTest\CorrelationTest.cs" />
+    <Compile Include="src\CorrelationCalculatorTest\DenominateurCorrelationTest.cs" />
+    <Compile Include="src\VarianceCalculatorTest\DistanceTest.cs" />
+    <Compile Include="src\VarianceCalculatorTest\EcartTypeTest.cs" />
+    <Compile Include="src\VarianceCalculatorTest\VarianceListValuesTest.cs" />
+    <Compile Include="src\VarianceCalculatorTest\MoyenneTest.cs" />
+    <Compile Include="src\CorrelationCalculatorTest\NumerateurCorrelationTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TestAbs.cs" />
-    <Compile Include="TestPow.cs" />
-    <Compile Include="TestStreamReader.cs" />
+    <Compile Include="src\UtilsTest\TestAbs.cs" />
+    <Compile Include="src\UtilsTest\TestPow.cs" />
+    <Compile Include="src\UtilsTest\TestStreamReader.cs" />
+    <Compile Include="src\VarianceCalculatorTest\TestVarianceCalculator.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ConsoleApplication1\VarianceCalculator.csproj">

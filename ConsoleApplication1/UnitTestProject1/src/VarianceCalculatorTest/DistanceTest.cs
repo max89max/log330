@@ -28,13 +28,13 @@ namespace UnitTestProject
         [Fact]
         public void TestDistanceBorneSuperieure()
         {
-            const double distanceTest = 200;
+            const double distanceTest = 190.07;
 
             List<double> listNumber = new List<double>();
 
             listNumber.Add(10.98);
-            listNumber.Add(20.98);
-            listNumber.Add(30.98);
+            listNumber.Add(20.221);
+            listNumber.Add(30.44);
 
             double moyenne = 20.98;
 
@@ -46,19 +46,17 @@ namespace UnitTestProject
         [Fact]
         public void TestDistanceBorneInvalide()
         {
-            const double distanceTest = 20;
-
             List<double> listNumber = new List<double>();
 
             listNumber.Add(10);
-            listNumber.Add(0);
+            listNumber.Add(double.NaN);
             listNumber.Add(0);
 
-            double moyenne = 0;
+            double moyenne = 50;
 
             double distance = VarianceCalculator.GetSommeDistance(listNumber, moyenne);
 
-            Assert.NotEqual(distance, distanceTest);
+            Assert.Equal(double.NaN, distance);
         }
     }
 }

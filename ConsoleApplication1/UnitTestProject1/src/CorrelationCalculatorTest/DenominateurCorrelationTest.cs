@@ -45,19 +45,17 @@ namespace UnitTestProject
         [Fact]
         public void TestDenominateurCorrelationInvalide()
         {
-            const double denominateurTest = 0;
+            double sommeExposantX = double.NaN;
+            double sommePowX = double.NaN;
 
-            double sommeExposantX = 64;
-            double sommePowX = 64;
-
-            double sommeExposantY = 64;
-            double sommePowY = 64;
+            double sommeExposantY = double.NaN;
+            double sommePowY = double.NaN;
 
             int nbrPairDonnees = 1;
 
             double denominateur = CorrelationCalculator.calculDenominateurCorrelation(sommeExposantX, sommeExposantY, sommePowX, sommePowY, nbrPairDonnees);
 
-            Assert.Equal(denominateur, denominateurTest);
+            Assert.Equal(double.NaN, denominateur);
         }
     }
 }

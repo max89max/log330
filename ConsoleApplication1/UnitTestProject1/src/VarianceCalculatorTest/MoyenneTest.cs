@@ -26,13 +26,13 @@ namespace UnitTestProject
         [Fact]
         public void TestMoyenneBorneSuperieure()
         {
-            const double moyenneTest = 20.999;
+            const double moyenneTest = 20.43;
 
             List<double> listNumber = new List<double>();
 
-            listNumber.Add(10.999);
-            listNumber.Add(20.999);
-            listNumber.Add(30.999);
+            listNumber.Add(10.9);
+            listNumber.Add(20.29);
+            listNumber.Add(30.11);
 
             double moyenne = VarianceCalculator.GetMoyenne(listNumber);
 
@@ -42,13 +42,11 @@ namespace UnitTestProject
         [Fact]
         public void TestMoyenneBorneInvalide()
         {
-            const double moyenneTest = 20.999;
-
             List<double> listNumber = new List<double>();
 
             double moyenne = VarianceCalculator.GetMoyenne(listNumber);
 
-            Assert.NotEqual(moyenne, moyenneTest);
+            Assert.Equal(double.NaN, moyenne);
         }
     }
 }

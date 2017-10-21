@@ -40,16 +40,14 @@ namespace UnitTestProject
         [Fact]
         public void TestNumerateurCorrelationInvalide()
         {
-            const double numerateurTest = 0;
-
-            double sommeX = 10;
-            double sommeY = 40;
-            double sommeXY = 200;
+            double sommeX = double.NaN;
+            double sommeY = double.NaN;
+            double sommeXY = double.NaN;
             int nbrPairDonnees = 2;
 
             double numerateur = CorrelationCalculator.calculNumerateurCorrelation(sommeX, sommeY, sommeXY, nbrPairDonnees);
 
-            Assert.Equal(numerateur, numerateurTest);
+            Assert.Equal(double.NaN, numerateur);
         }
     }
 }

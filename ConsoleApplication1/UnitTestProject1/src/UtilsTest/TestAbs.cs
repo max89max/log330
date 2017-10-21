@@ -29,11 +29,9 @@ namespace UnitTestProject1
         [Fact]
         public void TestAbsBorneInvalide()
         {
-            const double absTest = 0;
+            double abs = Program.abs(double.NaN);
 
-            double abs = Program.abs(0);
-
-            Assert.Equal(abs, absTest);
+            Assert.Equal(double.NaN, abs);
         }
     }
 }

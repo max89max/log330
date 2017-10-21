@@ -36,14 +36,12 @@ namespace UnitTestProject
         [Fact]
         public void TestEcartTypeBorneInvalide()
         {
-            const double ecartTypeTest = 0;
-
-            double sommeDistance = 230;
-            int nbrPairDonnees = 0;
+            double sommeDistance = double.NaN;
+            int nbrPairDonnees =2;
 
             double ecartType = VarianceCalculator.GetEcartType(sommeDistance, nbrPairDonnees);
 
-            Assert.NotEqual(ecartType, ecartTypeTest);
+            Assert.Equal(double.NaN, ecartType);
         }
     }
 }

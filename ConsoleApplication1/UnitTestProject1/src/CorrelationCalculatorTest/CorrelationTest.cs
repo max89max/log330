@@ -10,7 +10,7 @@ namespace UnitTestProject
         [Fact]
         public void TestCorrelationBorneInferieure()
         {
-            const double correlationTest = 200;
+            const double correlationTest = 0.98;
 
             List<double> listNumberX = new List<double>();
 
@@ -26,13 +26,13 @@ namespace UnitTestProject
 
             double correlation = CorrelationCalculator.calculCorrelation(listNumberX, listNumberY);
 
-            Assert.NotEqual(correlation, correlationTest);
+            Assert.Equal(correlation, correlationTest);
         }
 
         [Fact]
         public void TestCorrelationBorneSuperieure()
         {
-            const double correlationTest = 200;
+            const double correlationTest = 1;
 
             List<double> listNumberX = new List<double>();
 
@@ -48,7 +48,7 @@ namespace UnitTestProject
 
             double correlation = CorrelationCalculator.calculCorrelation(listNumberX, listNumberY);
 
-            Assert.NotEqual(correlation, correlationTest);
+            Assert.Equal(correlation, correlationTest);
         }
 
         [Fact]
@@ -58,19 +58,19 @@ namespace UnitTestProject
 
             List<double> listNumberX = new List<double>();
 
-            listNumberX.Add(10);
-            listNumberX.Add(20);
-            listNumberX.Add(30);
+            listNumberX.Add(double.NaN);
+            listNumberX.Add(double.NaN);
+            listNumberX.Add(double.NaN);
 
             List<double> listNumberY = new List<double>();
 
-            listNumberY.Add(60);
-            listNumberY.Add(70);
-            listNumberY.Add(90);
+            listNumberY.Add(double.NaN);
+            listNumberY.Add(double.NaN);
+            listNumberY.Add(double.NaN);
 
             double correlation = CorrelationCalculator.calculCorrelation(listNumberX, listNumberY);
 
-            Assert.NotEqual(correlation, correlationTest);
+            Assert.Equal(double.NaN, correlation);
         }
     }
 }

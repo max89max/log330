@@ -29,11 +29,9 @@ namespace UnitTestProject1
         [Fact]
         public void TestPowBorneInvalide()
         {
-            const double powTest = 1;
+            double pow = Program.pow(double.NaN);
 
-            double pow = Program.pow(-1);
-
-            Assert.Equal(pow, powTest);
+            Assert.Equal(double.NaN, pow);
         }
     }
 }

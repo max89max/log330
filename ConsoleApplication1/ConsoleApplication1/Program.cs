@@ -31,6 +31,9 @@ namespace ConsoleApplication1
 
         public static double abs(double value)
         {
+            if (double.IsNaN(value))
+                return double.NaN;
+
             double absValue = value;
 
             if (absValue < 0)
@@ -41,6 +44,9 @@ namespace ConsoleApplication1
 
         public static double pow(double value)
         {
+            if (double.IsNaN(value))
+                return double.NaN;
+
             double absValue = abs(value);
 
             double powValue = absValue * absValue;
