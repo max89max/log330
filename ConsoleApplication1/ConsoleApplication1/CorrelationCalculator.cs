@@ -15,54 +15,12 @@ namespace ConsoleApplication1
 
             StreamReader reader = Program.GetStreamReader("testCorrelation.csv");
 
-            Tuple<List<double>, List<double>> turpleListNumber = GetListValues(reader);
+            Tuple<List<double>, List<double>> turpleListNumber = Program.GetTwoListsValues(reader);
 
             List<double> listNumberX = turpleListNumber.Item1;
             List<double> listNumberY = turpleListNumber.Item2;
 
             double correlation = calculCorrelation(listNumberX, listNumberY);
-        }
-
-        public static Tuple<List<double>, List<double>> GetListValues(StreamReader reader)
-        {
-            if (reader == null)
-                return null;
-            
-            List<double> listNumberX = new List<double>();
-            List<double> listNumberY = new List<double>();
-
-            string numeroText = " données par colonne : \n";
-
-            while (!reader.EndOfStream)
-            {
-                var line = reader.ReadLine().Split(',');
-                if (line.Length == 2)
-                {
-                    var lineX = line[0].Split(';');
-                    var lineY = line[1].Split(';');
-
-                    var numberX = lineX[0];
-                    var numberY = lineY[0];
-
-                    if (lineX.Length == 2)
-                        numberX += "," + lineX[1];
-
-
-                    if (lineY.Length == 2)
-                        numberY += "," + lineY[1];
-
-                    listNumberX.Add(Convert.ToDouble(numberX));
-                    listNumberY.Add(Convert.ToDouble(numberY));
-
-                    numeroText += numberX + " " + numberY + "\n";
-                }
-            }
-
-            numeroText = listNumberX.Count + numeroText;
-
-            Console.WriteLine(numeroText);
-
-            return new Tuple<List<double>, List<double>>(listNumberX, listNumberY); ;
         }
 
         public static double calculCorrelation(List<double> listX, List<double> listY)

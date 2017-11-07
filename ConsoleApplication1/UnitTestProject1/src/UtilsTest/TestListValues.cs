@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.IO;
 using Xunit;
 
-namespace UnitTestProject1.src.VarianceCalculatorTest
+namespace UnitTestProject1.src.UtilsTest
 {
-    public class VarianceListValuesTest
+    public class TestListValues
     {
         [Fact]
-        public void TestVarianceListValuesBorneInferieure()
+        public void TestTwoListValuesBorneInferieure()
         {
             List<double> listNumberTest = new List<double>();
             listNumberTest.Add(10);
@@ -17,13 +17,13 @@ namespace UnitTestProject1.src.VarianceCalculatorTest
 
             StreamReader reader = Program.GetStreamReader("test.csv", true);
 
-            List<double> listNumber = VarianceCalculator.GetListValues(reader);
+            List<double> listNumber = Program.GetListValues(reader);
 
             Assert.NotEqual(listNumberTest, listNumber);
         }
 
         [Fact]
-        public void TestVarianceListValuesBorneSuperieure()
+        public void TestTwoListValuesBorneSuperieure()
         {
             List<double> listNumberTest = new List<double>();
             listNumberTest.Add(67.11);
@@ -32,15 +32,15 @@ namespace UnitTestProject1.src.VarianceCalculatorTest
 
             StreamReader reader = Program.GetStreamReader("test.csv", true);
 
-            List<double> listNumber = VarianceCalculator.GetListValues(reader);
+            List<double> listNumber = Program.GetListValues(reader);
 
             Assert.NotEqual(listNumberTest, listNumber);
         }
 
         [Fact]
-        public void TestVarianceListValuesBorneInvalide()
+        public void TestTwoListValuesBorneInvalide()
         {
-            List<double> listNumber = VarianceCalculator.GetListValues(null);
+            List<double> listNumber = Program.GetListValues(null);
 
             Assert.Null(listNumber);
         }

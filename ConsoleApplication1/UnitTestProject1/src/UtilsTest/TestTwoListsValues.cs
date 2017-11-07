@@ -6,12 +6,12 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace UnitTestProject1.src.CorrelationCalculatorTest
+namespace UnitTestProject1.src.UtilsTest
 {
     public class CorrelationListValues
     {
         [Fact]
-        public void TestVarianceListValuesBorneInferieure()
+        public void TestListValuesBorneInferieure()
         {
             List<double> listNumberTestX = new List<double>();
             listNumberTestX.Add(10);
@@ -25,14 +25,14 @@ namespace UnitTestProject1.src.CorrelationCalculatorTest
 
             System.IO.StreamReader reader = Program.GetStreamReader("test.csv", true);
 
-            Tuple<List<double>, List<double>> turpleListNumber = CorrelationCalculator.GetListValues(reader);
+            Tuple<List<double>, List<double>> turpleListNumber = Program.GetTwoListsValues(reader);
 
             Assert.NotEqual(listNumberTestX, turpleListNumber.Item1);
             Assert.NotEqual(listNumberTestX, turpleListNumber.Item2);
         }
 
         [Fact]
-        public void TestVarianceListValuesBorneSuperieure()
+        public void TestListValuesBorneSuperieure()
         {
             List<double> listNumberTestX = new List<double>();
             listNumberTestX.Add(10);
@@ -46,16 +46,16 @@ namespace UnitTestProject1.src.CorrelationCalculatorTest
 
             System.IO.StreamReader reader = Program.GetStreamReader("test.csv", true);
 
-            Tuple<List<double>, List<double>> turpleListNumber = CorrelationCalculator.GetListValues(reader);
+            Tuple<List<double>, List<double>> turpleListNumber = Program.GetTwoListsValues(reader);
 
             Assert.NotEqual(listNumberTestX, turpleListNumber.Item1);
             Assert.NotEqual(listNumberTestX, turpleListNumber.Item2);
         }
 
         [Fact]
-        public void TestVarianceListValuesBorneInvalide()
+        public void TestListValuesBorneInvalide()
         {
-            Tuple<List<double>, List<double>> turpleListNumber = CorrelationCalculator.GetListValues(null);
+            Tuple<List<double>, List<double>> turpleListNumber = Program.GetTwoListsValues(null);
 
             Assert.Null(turpleListNumber);
         }

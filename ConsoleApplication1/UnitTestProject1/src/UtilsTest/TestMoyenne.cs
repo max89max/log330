@@ -18,7 +18,7 @@ namespace UnitTestProject
             listNumber.Add(20);
             listNumber.Add(30);
 
-            double moyenne = VarianceCalculator.GetMoyenne(listNumber);
+            double moyenne = Program.calculMoyenne(listNumber);
 
             Assert.Equal(moyenne, moyenneTest);
         }
@@ -34,7 +34,7 @@ namespace UnitTestProject
             listNumber.Add(20.29);
             listNumber.Add(30.11);
 
-            double moyenne = VarianceCalculator.GetMoyenne(listNumber);
+            double moyenne = Program.calculMoyenne(listNumber);
 
             Assert.Equal(moyenne, moyenneTest);
         }
@@ -44,7 +44,7 @@ namespace UnitTestProject
         {
             List<double> listNumber = new List<double>();
 
-            double moyenne = VarianceCalculator.GetMoyenne(listNumber);
+            double moyenne = Program.calculMoyenne(listNumber);
 
             Assert.Equal(double.NaN, moyenne);
         }
