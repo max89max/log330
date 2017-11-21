@@ -21,6 +21,8 @@ namespace ConsoleApplication1
             List<double> listNumberY = turpleListNumber.Item2;
 
             double correlation = calculCorrelation(listNumberX, listNumberY);
+
+            String correlationText = getNorminalLink(correlation);
         }
 
         public static double calculCorrelation(List<double> listX, List<double> listY)

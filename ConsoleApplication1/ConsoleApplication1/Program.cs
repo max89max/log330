@@ -11,7 +11,7 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Bonjour \n Que voulez-vous calculer?. (Variance, Correlation, Regression)");
+            Console.WriteLine("Bonjour \n Que voulez-vous calculer?. (Variance, Correlation, Regression, Effort)");
             string reponse = Console.ReadLine();
 
             if(reponse == "Variance")
@@ -28,6 +28,11 @@ namespace ConsoleApplication1
             {
                 RegressionCalculator regressionC = new RegressionCalculator();
                 regressionC.calcul();
+            }
+            else if (reponse == "Effort")
+            {
+                EffortCalculator effortC = new EffortCalculator();
+                effortC.calcul();
             }
 
             Console.WriteLine("Appuyer sur enter pour quitter.");
@@ -178,7 +183,7 @@ namespace ConsoleApplication1
 
             Console.WriteLine(numeroText);
 
-            return new Tuple<List<double>, List<double>>(listNumberX, listNumberY); ;
+            return new Tuple<List<double>, List<double>>(listNumberX, listNumberY);
         }
     }
 }
