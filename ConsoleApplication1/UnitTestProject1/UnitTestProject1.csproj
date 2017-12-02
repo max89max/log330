@@ -74,6 +74,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="src\EffortCalculatorTest\TestEffortNoteList.cs" />
     <Compile Include="src\RegressionCalculatorTest\TestB0.cs" />
     <Compile Include="src\RegressionCalculatorTest\TestB1.cs" />
     <Compile Include="src\RegressionCalculatorTest\TestRegressionCalculator.cs" />
